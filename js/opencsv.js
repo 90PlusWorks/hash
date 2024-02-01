@@ -13,4 +13,4 @@ reader.onloadend = () => {
   ij = ij + 1;
   }
 // (C) SAVE hashes
-
+saveHashes();
