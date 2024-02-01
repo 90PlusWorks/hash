@@ -4,7 +4,7 @@ let reader = new FileReader();
 // (A) READ CSV ON FILE PICK or LOAD or READ
 picker.onchange = () => reader.readAsText(picker.files[0]);
 // (B) READ CSV & GENERATE hashes
-let hash = [];
+var hash = [];
 reader.onloadend = () => {
     var ij = 0;
   for (let row of CSV.parse(reader.result)) {
